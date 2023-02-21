@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: white;
+/* Use a system font, if none are available use an available sans-sarif   font */
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+margin: 0;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Papyrus, fantasy;
+}
+
+section.board {
+display: grid;
+grid-template-rows: repeat(3, 10vmin);
+grid-template-columns: repeat(3, 10vmin);
+grid-gap: 0vmin;
+margin: 30px;
+}
+
+h1 {
+margin-top: 30px;
+}
+
+#message {
+font-size: 20px;
+}
+
+div {
+font-size: 8vmin;
+text-align: center;
+vertical-align: middle;
+}
+
+#name {
+border-radius: 5px;
+}
+
+#name[type='text'] {
+font-family: Papyrus, fantasy;
+font-weight:bolder;
+width: 200px;
+height: 30px;
+}
+
+.button {
+background-color: black;
+color: white;
+margin: 20px;
+width: 100px;
+border-radius: 5px;
+}
+
+.button:hover {
+
+}
+
+#sq0, #sq1, #sq2, #sq3, #sq4, #sq5 {
+border-bottom: 3px solid white;
+}
+
+#sq0, #sq1, #sq3, #sq4, #sq6, #sq7 {
+border-right: 3px solid white;
+}
+
+.goTime .sqr:hover, .button:hover {
+cursor: pointer;
+background-color: rgb(88, 88, 88);
+}
+
+#sq0 {
+border-top-left-radius: 15px;
+}
+
+#sq2 {
+border-top-right-radius: 15px;
+}
+
+#sq6 {
+border-bottom-left-radius: 15px;
+}
+
+#sq8 {
+border-bottom-right-radius: 15px;
+}
